@@ -4,6 +4,8 @@
   "description": "短小精悍的前端缓存工具，防止内存泄露",
   "main": "src/index.js",
   "scripts": {
+    "push": "node scripts/push",
+    "packagePage": "node scripts/packagePage",
     "example": "http-server -p 8880",
     "release": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2021-09-15 16:50:14
- * @LastEditTime: 2021-09-15 17:25:03
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: /fast-cache-ddza/example/test.html
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +11,9 @@
       var FC = window.FastCache;
       var cache = new FC();
       cache.set("a", 100);
-      alert(cache.get("a"));
+      console.log("clear before", cache.get("a"));
+      cache.clear();
+      console.log("clear after", cache.get("a"));
     </script>
   </body>
 </html>

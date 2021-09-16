@@ -9,7 +9,6 @@ const branch = process.argv[3] || 'dev' // 分支名
 
 callfile.exec(
   `
-
     git checkout ${branch} &&
     git reset --soft HEAD^ &&
     git pull origin ${branch} &&
